@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yandex Messenger — концепт</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar__brand">
+        <div class="brand-mark">Я</div>
+        <div>
+          <div class="brand-title">Yandex Messenger</div>
+          <div class="brand-subtitle">Команда «Пульс»</div>
+        </div>
+      </div>
+      <div class="sidebar__search">
+        <input type="text" placeholder="Поиск" aria-label="Поиск" />
+      </div>
+      <div class="sidebar__section">
+        <div class="sidebar__section-title">Чаты</div>
+        <button class="chat-item chat-item--active">
+          <div class="chat-item__avatar">М</div>
+          <div class="chat-item__meta">
+            <div class="chat-item__title">Маркетинг</div>
+            <div class="chat-item__preview">Новый лендинг готов, глянь!</div>
+          </div>
+          <div class="chat-item__time">12:45</div>
+        </button>
+        <button class="chat-item">
+          <div class="chat-item__avatar">Д</div>
+          <div class="chat-item__meta">
+            <div class="chat-item__title">Дизайн-ревью</div>
+            <div class="chat-item__preview">Отправил файлы в Figma</div>
+          </div>
+          <div class="chat-item__time">11:02</div>
+        </button>
+        <button class="chat-item">
+          <div class="chat-item__avatar">HR</div>
+          <div class="chat-item__meta">
+            <div class="chat-item__title">HR</div>
+            <div class="chat-item__preview">Заявка на отпуск одобрена</div>
+          </div>
+          <div class="chat-item__time">Вчера</div>
+        </button>
+        <button class="chat-item">
+          <div class="chat-item__avatar">IT</div>
+          <div class="chat-item__meta">
+            <div class="chat-item__title">IT поддержка</div>
+            <div class="chat-item__preview">Перезапустили доступ к VPN</div>
+          </div>
+          <div class="chat-item__time">Вчера</div>
+        </button>
+      </div>
+    </aside>
+
+    <main class="conversation">
+      <header class="conversation__header">
+        <div class="conversation__title">
+          <div class="conversation__avatar">М</div>
+          <div>
+            <div class="conversation__name">Маркетинг</div>
+            <div class="conversation__status">12 участников · 5 онлайн</div>
+          </div>
+        </div>
+        <div class="conversation__actions">
+          <button class="icon-button" aria-label="Поиск">
+            <span>🔍</span>
+          </button>
+          <button class="icon-button" aria-label="Звонок">
+            <span>📞</span>
+          </button>
+          <button class="icon-button" aria-label="Настройки">
+            <span>⚙️</span>
+          </button>
+        </div>
+      </header>
+
+      <section class="conversation__messages" id="messages">
+        <div class="message message--incoming">
+          <div class="message__avatar">А</div>
+          <div class="message__bubble">
+            <div class="message__name">Алина</div>
+            <p>Коллеги, финальную версию лендинга загрузила в папку «Запуск».</p>
+            <div class="message__meta">12:30</div>
+          </div>
+        </div>
+        <div class="message message--incoming">
+          <div class="message__avatar">И</div>
+          <div class="message__bubble">
+            <div class="message__name">Илья</div>
+            <p>Нужно согласовать CTA и проверить метрики. Кто возьмёт?</p>
+            <div class="message__meta">12:34</div>
+          </div>
+        </div>
+        <div class="message message--outgoing">
+          <div class="message__bubble">
+            <p>Я готов проверить тексты и собрать финальные цифры.</p>
+            <div class="message__meta">12:36</div>
+          </div>
+        </div>
+        <div class="message message--incoming">
+          <div class="message__avatar">М</div>
+          <div class="message__bubble">
+            <div class="message__name">Марина</div>
+            <p>Супер! Тогда до 15:00 ждём твои правки.</p>
+            <div class="message__meta">12:40</div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="composer">
+        <button class="composer__action" aria-label="Вложения">＋</button>
+        <div class="composer__input">
+          <input id="messageInput" type="text" placeholder="Напишите сообщение..." />
+          <div class="composer__hint">Enter — отправить</div>
+        </div>
+        <button class="composer__send" id="sendButton">Отправить</button>
+      </footer>
+    </main>
+
+    <aside class="details">
+      <div class="details__card">
+        <div class="details__header">
+          <div>
+            <div class="details__title">Запуск «Пульса»</div>
+            <div class="details__subtitle">Общий чат проекта</div>
+          </div>
+          <span class="details__badge">🔥 Активно</span>
+        </div>
+        <div class="details__stats">
+          <div>
+            <div class="details__number">24</div>
+            <div class="details__label">сообщения сегодня</div>
+          </div>
+          <div>
+            <div class="details__number">6</div>
+            <div class="details__label">важных задач</div>
+          </div>
+        </div>
+      </div>
+      <div class="details__card">
+        <div class="details__section-title">Быстрые действия</div>
+        <button class="details__action">Создать задачу</button>
+        <button class="details__action">Поделиться файлом</button>
+        <button class="details__action">Назначить звонок</button>
+      </div>
+      <div class="details__card">
+        <div class="details__section-title">Файлы</div>
+        <div class="file-item">
+          <div class="file-item__icon">📎</div>
+          <div>
+            <div class="file-item__title">Landing_2024.pdf</div>
+            <div class="file-item__meta">2.4 МБ · сегодня</div>
+          </div>
+        </div>
+        <div class="file-item">
+          <div class="file-item__icon">📊</div>
+          <div>
+            <div class="file-item__title">Metrics.xlsx</div>
+            <div class="file-item__meta">780 КБ · вчера</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
